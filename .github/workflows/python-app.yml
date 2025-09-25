@@ -4,21 +4,19 @@ on:
   push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
-
-  steps:
-  - name: Checkout code
-    uses: actions/checkout@v4
-  - name: Set up Python
-    uses: actions/setup-python@v6
-    with:
-      python-version: '3.13.7'
-  - name: Install dependencies
-    run: |
-      pip install -r GithubActions/1.Ariketa/src/requirements.txt
-
-  - name: Run tests
-    run: pytest GithubActions/1.Ariketa/src/test.py
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13.7'
+      - name: Install dependencies
+        run: |
+          pip install -r GithubActions/1.Ariketa/src/requirements.txt
+      - name: Run tests
+        run: pytest GithubActions/1.Ariketa/src/test.py
