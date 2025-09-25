@@ -21,4 +21,4 @@ jobs:
       - name: Run tests
         run: pytest GithubActions/1.Ariketa/src/test.py
       - name: ruff tests
-        run: pyruff GithubActions/1.Ariketa/src/
+        run: ruff GithubActions/1.Ariketa/src/
