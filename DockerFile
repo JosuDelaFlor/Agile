@@ -2,4 +2,4 @@ FROM python:3.13.7-slim
 
 COPY . .
 
-CMD [ "python", "GithubActions\\1.Ariketa\\src\\main.py" ]
+CMD [ "python", "GithubActions/1.Ariketa/src/main.py" ]
