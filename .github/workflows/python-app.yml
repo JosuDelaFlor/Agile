@@ -34,7 +34,7 @@ jobs:
           context: .
           push: true
           file: ./Dockerfile
-          tags: ghcr.io/${{ JosuDelaFlor/Agile }}/python-test:latest
+          tags: ghcr.io/JosuDelaFlor/Agile:latest
         name: TestBuildImage
         run: |
-          docker run ghcr.io/${{ github.repository_owner }}/python-test:latest
+          docker run ghcr.io/JosuDelaFlor/Agile:latest
