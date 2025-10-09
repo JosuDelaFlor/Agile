@@ -1,0 +1,5 @@
+FROM python:3.13.7-slim
+
+WORKDIR /app
+
+CMD [ "python", "GitHubActions/1.Ariketa/src/main.py" ]
