@@ -34,7 +34,7 @@ jobs:
           context: .
           push: true
           file: ./Dockerfile
-          tags: ghcr.io/JosuDelaFlor/Agile:latest
+          tags: ghcr.io/josudelaflor/agile:latest
       - name: TestBuildImage
         run: |
-          docker run ghcr.io/JosuDelaFlor/Agile:latest
+          docker run ghcr.io/josudelaflor/agile:latest
